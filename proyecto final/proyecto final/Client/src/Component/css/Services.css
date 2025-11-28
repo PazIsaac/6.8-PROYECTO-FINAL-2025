@@ -1,0 +1,143 @@
+.services {
+  min-height: 100vh;
+  padding: 64px 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.services-header h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.services-header p {
+  font-size: 19px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.service-card {
+  background: white;
+  padding: 32px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  color: #2c3e50;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.service-card p {
+  color: #6c757d;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.service-price {
+  font-size: 19px;
+  font-weight: bold;
+  color: #2E8B57;
+  margin-bottom: 24px;
+}
+
+.service-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background: #27AE60;
+  transform: translateY(-2px);
+}
+
+.services-cta {
+  text-align: center;
+  background: white;
+  padding: 48px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.services-cta h2 {
+  color: #2c3e50;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.services-cta p {
+  color: #6c757d;
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #27AE60;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 32px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-cta {
+    padding: 32px;
+  }
+  
+  .services-cta h2 {
+    font-size: 24px;
+  }
+}
